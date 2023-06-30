@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="alert alert-primary" role="alert">
+ 個別投稿
+</div>
+{% endblock%}
+
+{% block content %}
+<div class='container'>
+    <div class="alert alert-success" role="alert">
+        <p><img src='{{object.images.url}}' width=300></p>
+        <p>品種：{{object.title}}</p>
+        <p>国：{{object.author}}</p>
+        <p>飲んだ日：{{object.content}}</p>
+    </div>
+</div>
+{% endblock %}

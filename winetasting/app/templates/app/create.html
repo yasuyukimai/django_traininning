@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action='' method='POST' enctype="multipart/form-data">
+{% csrf_token %}
+　　<p>画像：<input type='file' name='images'></p>
+   <p>清涼度：<input type='text' name='coolness'></p>
+   <p>輝き：<input type='text' name='shine'></p>
+   <p>色調：<input type='text' name='tone'></p>
+   <p>濃淡：<input type='text' name='shade'></p>
+   <p>粘性：<input type='text' name='viscosity'></p>
+   <p>若さ：<input type='text' name='freshhness'></p>
+   <p>成熟度：<input type='text' name='Maturity''></p>
+　　<input type='hidden' name='author' value='{{ user.username }}'>
+　　<input type='submit' value='作成する'>
+</form>
+{% endblock %}

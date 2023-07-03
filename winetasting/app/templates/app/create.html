@@ -2,7 +2,7 @@
 
 {% block content %}
 <form action='' method='POST' enctype="multipart/form-data">
-{% csrf_token %}
+   {% csrf_token %}
 　　<p>画像：<input type='file' name='images'></p>
    <p>清涼度：<input type='text' name='coolness'></p>
    <p>輝き：<input type='text' name='shine'></p>

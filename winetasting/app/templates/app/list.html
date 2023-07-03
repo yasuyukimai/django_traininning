@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+{% for diary in diary_list %}
+<div class="post-preview">
+      <h2 class="post-title">
+        ブドウ：{{ list.grape }}
+        国：{{ list.country }}
+      </h2>
+</div>
+{% endfor %}
+{% endblock %}
